@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280">
+  <!-- Geometric faceted K logo with transparent background -->
+  
+  <!-- Left vertical stroke - dark base -->
+  <polygon points="20,0 70,0 70,280 20,280" fill="#1a3a5c"/>
+  
+  <!-- Left vertical stroke - lighter face -->
+  <polygon points="20,0 45,0 45,280 20,280" fill="#1e4d73"/>
+  
+  <!-- Upper arm - darkest face (back) -->
+  <polygon points="70,30 70,130 140,80" fill="#2c5f8a"/>
+  
+  <!-- Upper arm - medium face -->
+  <polygon points="70,130 140,80 220,0 160,0" fill="#1a3a5c"/>
+  
+  <!-- Upper arm - lightest face (top) -->
+  <polygon points="70,30 160,0 220,0 140,80" fill="#3a7ab5"/>
+  
+  <!-- Lower arm - darkest face -->
+  <polygon points="70,150 70,250 140,200" fill="#2c5f8a"/>
+  
+  <!-- Lower arm - medium face -->
+  <polygon points="140,200 70,250 160,280 220,280" fill="#1e4d73"/>
+  
+  <!-- Lower arm - lightest face -->
+  <polygon points="70,150 140,200 220,280 160,280" fill="#1a3a5c"/>
+  
+  <!-- Center joint highlight -->
+  <polygon points="70,130 70,150 140,200 140,80" fill="#4a90c4"/>
+</svg>

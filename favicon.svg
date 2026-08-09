@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Favicon - simplified geometric K -->
+  <polygon points="3,1 8,1 8,31 3,31" fill="#1a3a5c"/>
+  <polygon points="8,3 8,14 16,9" fill="#2c5f8a"/>
+  <polygon points="8,14 16,9 29,1 20,1" fill="#1a3a5c"/>
+  <polygon points="8,3 20,1 29,1 16,9" fill="#3a7ab5"/>
+  <polygon points="8,18 8,28 16,23" fill="#2c5f8a"/>
+  <polygon points="16,23 8,28 20,31 29,31" fill="#1e4d73"/>
+  <polygon points="8,18 16,23 29,31 20,31" fill="#1a3a5c"/>
+  <polygon points="8,14 8,18 16,23 16,9" fill="#4a90c4"/>
+</svg>
