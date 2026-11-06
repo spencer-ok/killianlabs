@@ -85,6 +85,12 @@
         .social-links a:hover {
             color: #1976d2;
         }
+        [data-bs-toggle="collapse"] .bi-chevron-down {
+            transition: transform 0.2s ease;
+        }
+        [data-bs-toggle="collapse"][aria-expanded="true"] .bi-chevron-down {
+            transform: rotate(180deg);
+        }
         footer {
             background: #f8f9fa;
             padding: 30px 0;
@@ -139,6 +145,60 @@
                             <h5 class="card-title"><i class="bi bi-people me-2"></i>Lindon 19th Ward Portal</h5>
                             <p class="card-text">A ward leadership app for planning Sunday sacrament meetings — music, prayers, speakers, and weekly coordination to keep everything running smoothly.</p>
                             <a href="https://lindon19.killianlabs.com" class="btn btn-outline-primary btn-sm" target="_blank">Visit Site <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex align-items-center">
+                                <img src="books-icon.png" alt="Book Library" width="28" height="28" class="me-2">
+                                Book Library
+                                <span class="badge text-bg-warning ms-2" style="font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Beta</span>
+                            </h5>
+                            <p class="card-text">A personal book catalog app — scan barcodes, track your collection, manage wishlists, and keep your home library organized with photos and details.</p>
+                            <a href="https://books.killianlabs.com" class="btn btn-outline-primary btn-sm" target="_blank">Visit Site <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex align-items-center">
+                                <img src="pantry-icon.png" alt="Pantry Plus" width="28" height="28" class="me-2">
+                                Pantry Plus
+                                <span class="badge text-bg-warning ms-2" style="font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Beta</span>
+                            </h5>
+                            <p class="card-text">A barcode-first food storage and inventory tracker — scan items, monitor calorie reserves, and track household emergency preparedness goals.</p>
+                            <a href="https://pantry.killianlabs.com" class="btn btn-outline-primary btn-sm" target="_blank">Visit Site <i class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Was Built / Architecture Note -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10">
+                    <div class="card border-0 shadow-sm" style="border-radius: 12px; background: #f8f9fa;">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-cpu fs-4 text-primary me-3"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">A Note on How These Projects Are Built</h6>
+                                        <small class="text-muted">Independent, practical, and cost-effective</small>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-primary btn-sm rounded-pill px-3" type="button" data-bs-toggle="collapse" data-bs-target="#architectureCollapse" aria-expanded="false" aria-controls="architectureCollapse">
+                                    Learn More <i class="bi bi-chevron-down ms-1"></i>
+                                </button>
+                            </div>
+                            <div class="collapse mt-3" id="architectureCollapse">
+                                <hr class="my-3">
+                                <p class="mb-0" style="font-size: 0.95rem; line-height: 1.6; color: #555;">
+                                    These applications are personal projects built to be as practical and cost-effective as possible. Because they aren't backed by large-scale enterprise infrastructure, you may occasionally notice a brief delay in response times, but each is designed to be lightweight, reliable, and purpose-built.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
