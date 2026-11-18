@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#c8862b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>The Settlers of Catan Classic — Scorecard</title>
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C01RZS41RL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C01RZS41RL');
+  </script>
+</head>
+<body>
+  <!-- Inline SVG icon sprite (Lucide, MIT license) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+        <circle cx="12" cy="12" r="3"/>
+      </symbol>
+      <symbol id="i-dice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="3"/>
+        <path d="M16 8h.01M8 8h.01M8 16h.01M16 16h.01M12 12h.01"/>
+      </symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/>
+        <line x1="4" y1="22" x2="4" y2="15"/>
+      </symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5v14"/>
+      </symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14"/>
+      </symbol>
+      <symbol id="i-wood" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 6 9h3l-4 6h4l-3 5h12l-3-5h4l-4-6h3z"/>
+        <path d="M12 20v2"/>
+      </symbol>
+      <symbol id="i-brick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="16" rx="1"/>
+        <path d="M3 9h18M3 15h18M9 4v5M15 9v6M9 15v5"/>
+      </symbol>
+      <symbol id="i-ore" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m8 3 4 8 5-5 5 15H2z"/>
+      </symbol>
+      <symbol id="i-wheat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22V8"/>
+        <path d="M12 8c0-2 1.5-3.5 3.5-3.5C15.5 6.5 14 8 12 8Z"/>
+        <path d="M12 8c0-2-1.5-3.5-3.5-3.5C8.5 6.5 10 8 12 8Z"/>
+        <path d="M12 13c0-2 1.5-3.5 3.5-3.5C15.5 11.5 14 13 12 13Z"/>
+        <path d="M12 13c0-2-1.5-3.5-3.5-3.5C8.5 11.5 10 13 12 13Z"/>
+      </symbol>
+      <symbol id="i-sheep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <!-- woolly body -->
+        <path d="M8 9a3 3 0 0 0-1 5.8A3 3 0 0 0 9 17h6a3 3 0 0 0 2-2.2A3 3 0 0 0 16 9a3 3 0 0 0-5-2 3 3 0 0 0-3 2Z"/>
+        <!-- head -->
+        <path d="M17 10.5c1.2 0 2-.9 2-2s-.9-2-2-2c-.3 0-.6.1-.9.2"/>
+        <!-- ears -->
+        <path d="M19 7.2c.6-.4 1.3-.3 1.7.2M17.2 6.6c-.2-.6.1-1.3.7-1.6"/>
+        <!-- legs -->
+        <path d="M10 17v3M14 17v3"/>
+      </symbol>
+      <symbol id="i-basket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <!-- top rim -->
+        <ellipse cx="12" cy="5" rx="7" ry="2"/>
+        <!-- center pole -->
+        <path d="M12 5v14"/>
+        <!-- chains -->
+        <path d="M7 5.5c1 2 1.5 4 5 5 3.5-1 4-3 5-5"/>
+        <path d="M9.5 6c.5 1.5 1 3 2.5 3.5 1.5-.5 2-2 2.5-3.5"/>
+        <!-- basket rim (top of catch) -->
+        <ellipse cx="12" cy="13" rx="6" ry="1.8"/>
+        <!-- basket body -->
+        <path d="M6 13v3c0 1.1 2.7 2 6 2s6-.9 6-2v-3"/>
+        <!-- base -->
+        <path d="M9 20h6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="app-header">
+    <img class="header-logo" src="logo.png" alt="The Settlers of Catan Classic logo — a disc golf basket" />
+    <div class="header-text">
+      <h1>The Settlers of Catan Classic</h1>
+      <p class="header-date">September 2026</p>
+      <p class="subtitle">Round Robin Style · Dry Creek, Lehi</p>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- Merged sticky panel: title header + grand totals + per-round -->
+    <div id="sticky-panel">
+      <div id="title-bar">
+        <img src="logo.png" alt="" class="title-bar-logo" />
+        <span class="title-bar-name">The Settlers of Catan Classic</span>
+      </div>
+      <div id="grand-bar">
+        <div class="grand-grid">
+          <div><span class="grand-label">Strokes</span><strong id="grand-strokes">0</strong></div>
+          <div><span class="grand-label">VP</span><strong id="grand-vp">0</strong></div>
+          <div class="grand-adj"><span class="grand-label">Adjusted</span><strong id="grand-adjusted">0</strong></div>
+        </div>
+        <div class="grand-rounds" id="grand-rounds"><!-- per-round strips filled by JS --></div>
+      </div>
+    </div>
+
+    <!-- Team setup (collapsible) -->
+    <details class="card" id="team-setup" open>
+      <summary><span class="summary-team" id="summary-team">Team Setup</span><svg class="summary-gear" aria-hidden="true"><use href="#i-settings"></use></svg></summary>
+      <label class="field">
+        <span>Team name</span>
+        <input type="text" id="team-name" placeholder="e.g. The Forest Dwellers" autocomplete="off" />
+      </label>
+      <label class="field">
+        <span>Starting hole (shotgun start)</span>
+        <select id="start-hole"><!-- filled by JS --></select>
+      </label>
+      <div class="field">
+        <span>Players (tap to add; tap again to remove). Order sets the round-robin starter.</span>
+        <div id="roster-picker" class="roster-picker"><!-- filled by JS --></div>
+      </div>
+      <div class="field">
+        <span>Add a guest (not on the roster)</span>
+        <div class="guest-add">
+          <input type="text" id="guest-name" placeholder="Guest name" autocomplete="off" />
+          <button type="button" id="btn-add-guest" class="btn-add-guest">Add</button>
+        </div>
+      </div>
+      <div class="field">
+        <span>Save / Restore</span>
+        <p class="hint">Data auto-saves on this phone. Export a backup in case the cache clears.</p>
+        <div class="data-buttons">
+          <button class="btn-secondary" id="btn-export">Export JSON</button>
+          <button class="btn-secondary" id="btn-import">Import JSON</button>
+          <button class="btn-danger" id="btn-reset">Reset All</button>
+        </div>
+        <input type="file" id="import-file" accept="application/json,.json" hidden />
+      </div>
+    </details>
+
+    <!-- Team scoring: rounds rendered here -->
+    <section id="rounds"><!-- filled by JS --></section>
+    <button class="btn-add-round" id="btn-add-round">Add Round</button>
+
+    <!-- Personal stats -->
+    <section class="section-head"><h2>Personal Stats</h2></section>
+    <section id="players"><!-- filled by JS --></section>
+  </main>
+
+  <footer class="app-footer">
+    <p>EMT Media Services</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
